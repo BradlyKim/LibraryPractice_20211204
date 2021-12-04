@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nepplus.librarypractice_20211204">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +12,7 @@
         android:theme="@style/Theme.LibraryPractice_20211204">
         <activity
             android:name=".ViewPhotoActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

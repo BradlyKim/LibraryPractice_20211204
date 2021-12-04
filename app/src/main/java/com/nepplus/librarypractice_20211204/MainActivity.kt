@@ -1,7 +1,9 @@
 package com.nepplus.librarypractice_20211204
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +13,16 @@ class MainActivity : AppCompatActivity() {
         setValues()
     }
 
-    fun setupEvents(){}
+    fun setupEvents(){
+
+        imgProfile.setOnClickListener {
+
+            val myIntent = Intent(this, ViewPhotoActivity::class.java)
+            startActivity(myIntent)
+
+        }
+
+    }
 
     fun setValues(){}
 
