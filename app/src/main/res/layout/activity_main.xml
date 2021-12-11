@@ -20,12 +20,12 @@
             android:layout_height="80dp"
             app:civ_border_width="2dp"
             app:civ_border_color="#00FF00"
-            android:src="@drawable/img"/>
+            android:src="@drawable/img2"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이유"/>
+            android:text="김연아"/>
 
 
     </LinearLayout>

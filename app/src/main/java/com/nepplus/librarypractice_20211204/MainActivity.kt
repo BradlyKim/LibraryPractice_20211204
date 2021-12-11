@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 //        인터넷상에 있는 이미지를 -> 곧바로 이미지뷰에 적용.
 
 //        이미지 주소를 변수에 담아두자.
-        val imageURL = "https://ichef.bbci.co.uk/news/640/cpsprodpb/DFCD/production/_117339275_gettyimages-584935916.jpg"
+        val imageURL = "https://cdn.mhnse.com/news/photo/202006/60511_30579_3444.jpg"
 
 //        Glide 이용 => imageURL 주소의 그림을 => imgInternet에 반영.
 
