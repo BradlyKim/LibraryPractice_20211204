@@ -14,7 +14,7 @@
         android:theme="@style/Theme.LibraryPractice_20211204">
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true" >
 
             <intent-filter>
