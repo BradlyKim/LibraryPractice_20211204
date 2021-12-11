@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
             val pl = object : PermissionListener {
                 override fun onPermissionGranted() {
 //                    권한 승인 됐을때 할 행동
+//                    010-2222-5555 에 실제 전화 연결
+
                     val myUri = Uri.parse("tel:010-2222-5555")
                     val myIntent = Intent(Intent.ACTION_CALL, myUri)
                     startActivity(myIntent)
@@ -41,15 +44,11 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-//            실제 권한 확인 요성
+//            실제 권한 확인 요청
             TedPermission.create()
                 .setPermissionListener(pl)
                 .setPermissions( Manifest.permission.CALL_PHONE )
                 .check()
-
-
-
-//            010-2222-5555 에 실제 전화 연결
 
 
 
@@ -64,6 +63,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun setValues(){}
+    fun setValues(){
+
+//        인터넷상에 있는 이미지를 -> 곧바로 이미지뷰에 적용.
+
+//        이미지 주소를 변수에 담아두자.
+        val imageURL = "https://ichef.bbci.co.uk/news/640/cpsprodpb/DFCD/production/_117339275_gettyimages-584935916.jpg"
+
+//        Glide 이용 => imageURL 주소의 그림을 => imgInternet에 반영.
+
+        Glide.with(this).load(imageURL).into(imgInternet)
+
+
+    }
 
 }
